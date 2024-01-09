@@ -1,0 +1,19 @@
+.nav-item {
+  background-color: bisque;
+  border-radius: 15px;
+  padding: 5px;
+  width: max-content;
+  margin: 3px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.router-link-active {
+  background-color: rgb(175, 175, 213);
+}

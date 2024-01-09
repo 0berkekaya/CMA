@@ -1,0 +1,3 @@
+node .\utils\generate-module.js berke -> projenin src/app klasörü altında gerekli yapılanmayı kurar.
+
+
