@@ -1,8 +1,15 @@
+#!/usr/bin/env node
 const { fs, path } = require('./library/fileStream');
 
 const parentDir = path.join(__dirname, '../');
 
-const moduleName = process.argv[2]; // Modül adını komut satırından al
+// const moduleName = process.argv[2]; // Modül adını komut satırından al
+// if (!moduleName) {
+//   console.error('Modül adı belirtmelisiniz.');
+//   process.exit(1);
+// }
+
+const moduleName = process.argv.slice(2)[0];
 if (!moduleName) {
   console.error('Modül adı belirtmelisiniz.');
   process.exit(1);
@@ -14,6 +21,7 @@ const firstCharUpModuleName =
 // Modül dizini oluştur
 const moduleDirectory = path.join(parentDir, 'src/app/module-provider', moduleName);
 fs.mkdirSync(moduleDirectory, { recursive: true });
+
 
 // Routing dosyası oluştur
 const moduleRoutingContent = `

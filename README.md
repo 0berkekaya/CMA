@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Generate New Module
+If you want to add your own module, you can use the following command: "node ./utils/generate_module.js module-Name" after open src/app/module-provider/base/module-provider-routing.module.ts and new components import this area with handmade.
